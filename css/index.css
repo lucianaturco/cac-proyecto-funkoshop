@@ -28,6 +28,7 @@
 
   /*Font-sizes*/
   --font-display: 4.6em;
+  --font-xxlarge: 4.2em;
   --font-jumbo: 3.8em;
   --font-xlarge: 3em;
   --font-large: 2.4em;
@@ -338,7 +339,7 @@ aside {
   grid-column: 2/2;
 }
 
-form input,
+form .input-shop,
 select {
   display: flex;
   width: 243.034px;
@@ -482,4 +483,98 @@ aside input[type="checkbox"] {
   font-size: var(--font-medium);
   color: var(--light-font-solid);
   border: 0;
+}
+
+/* ADMIN GENERAL */
+
+.admin-title {
+  color: var(--dark-solid);
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxlarge);
+  font-weight: 700;
+  letter-spacing: 1.68px;
+}
+
+.admin-margin {
+  margin: var(--spacing-36) 0;
+}
+
+.admin-label-text {
+  color: var(--dark-font-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-large);
+  font-weight: 400;
+  letter-spacing: 0.96px;
+}
+
+.admin-input-line {
+  border: 2px solid var(--primary-solid);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #b9b9b9;
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-weight: 400;
+  letter-spacing: 0.64px;
+}
+
+/*LOGIN*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-12);
+  margin-top: var(--spacing-12);
+}
+
+.login-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-12);
+  margin: var(--spacing-36);
+}
+
+.login-item-button {
+  width: 102.995px;
+  height: 39.062px;
+  border: none;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  margin: 0 var(--spacing-36);
+}
+
+.login-item-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#recordar {
+  width: 16.275px;
+  height: 16.275px;
+  border-radius: 3px;
+  border: 2px solid #1f1f1f;
+  text-align: right;
+  margin: var(--spacing-8);
+}
+
+.checkbox-title {
+  color: #1f1f1f;
+
+  font-family: Inter;
+  font-size: var(--font-medium);
+  font-weight: 400;
+}
+
+.password {
+  color: #1d84b5;
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

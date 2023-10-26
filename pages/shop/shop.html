@@ -48,6 +48,7 @@
             id="site-search"
             name="BUSCAR"
             placeholder="item o categoría"
+            class="input-shop"
           />
           <p>ORDENAR POR</p>
           <select name="orden" id="orden">
@@ -63,14 +64,20 @@
           <p>PRECIO</p>
           <div class="min-max">
             <label for="min">MIN</label>
-            <input type="text" placeholder="0" id="min" />
+            <input type="text" placeholder="0" id="min" class="input-shop" />
             <label for="max"> - MAX</label>
-            <input type="text" placeholder="0" id="max" />
+            <input type="text" placeholder="0" id="max" class="input-shop" />
           </div>
 
           <p>FILTRAR</p>
           <div class="checkbox">
-            <input type="checkbox" name="filter1" id="filter1" value="nuevos" />
+            <input
+              type="checkbox"
+              name="filter1"
+              id="filter1"
+              value="nuevos"
+              class="input-shop"
+            />
             <label for="filter1"> NUEVOS </label>
           </div>
           <div class="checkbox">
@@ -79,6 +86,7 @@
               name="filter2"
               id="filter2"
               value="ofertas"
+              class="input-shop"
             />
             <label for="filter2">OFERTAS</label>
           </div>
@@ -88,6 +96,7 @@
               name="filter3"
               id="filter3"
               value="edicionespecial"
+              class="input-shop"
             />
             <label for="filter3">EDICION ESPECIAL</label>
           </div>
@@ -97,6 +106,7 @@
               name="filter4"
               id="filter4"
               value="favoritos"
+              class="input-shop"
             />
             <label for="filter4">FAVORITOS</label>
           </div>
@@ -394,7 +404,10 @@
           </li>
         </ul>
         <picture>
-          <img src="../../img/branding/isotype.svg" alt="Isotipo de FunkoShop" />
+          <img
+            src="../../img/branding/isotype.svg"
+            alt="Isotipo de FunkoShop"
+          />
         </picture>
       </nav>
       <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
